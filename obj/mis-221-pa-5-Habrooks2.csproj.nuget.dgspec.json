@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/mis-221-pa-5-Habrooks2.csproj": {}
+  },
+  "projects": {
+    "/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/mis-221-pa-5-Habrooks2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/mis-221-pa-5-Habrooks2.csproj",
+        "projectName": "mis-221-pa-5-Habrooks2",
+        "projectPath": "/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/mis-221-pa-5-Habrooks2.csproj",
+        "packagesPath": "/Users/hunterbrooks/.nuget/packages/",
+        "outputPath": "/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/hunterbrooks/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

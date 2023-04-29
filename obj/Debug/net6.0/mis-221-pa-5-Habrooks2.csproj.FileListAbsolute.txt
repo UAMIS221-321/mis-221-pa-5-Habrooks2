@@ -1,0 +1,15 @@
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/obj/Debug/net6.0/mis-221-pa-5-Habrooks2.csproj.AssemblyReference.cache
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/obj/Debug/net6.0/mis-221-pa-5-Habrooks2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/obj/Debug/net6.0/mis-221-pa-5-Habrooks2.AssemblyInfoInputs.cache
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/obj/Debug/net6.0/mis-221-pa-5-Habrooks2.AssemblyInfo.cs
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/obj/Debug/net6.0/mis-221-pa-5-Habrooks2.csproj.CoreCompileInputs.cache
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/bin/Debug/net6.0/mis-221-pa-5-Habrooks2
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/bin/Debug/net6.0/mis-221-pa-5-Habrooks2.deps.json
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/bin/Debug/net6.0/mis-221-pa-5-Habrooks2.runtimeconfig.json
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/bin/Debug/net6.0/mis-221-pa-5-Habrooks2.dll
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/bin/Debug/net6.0/mis-221-pa-5-Habrooks2.pdb
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/obj/Debug/net6.0/mis-221-pa-5-Habrooks2.dll
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/obj/Debug/net6.0/refint/mis-221-pa-5-Habrooks2.dll
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/obj/Debug/net6.0/mis-221-pa-5-Habrooks2.pdb
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/obj/Debug/net6.0/mis-221-pa-5-Habrooks2.genruntimeconfig.cache
+/Users/hunterbrooks/Desktop/SPRINGSUMMER2023/MIS221/Projects/mis-221-pa-5-Habrooks2/obj/Debug/net6.0/ref/mis-221-pa-5-Habrooks2.dll
