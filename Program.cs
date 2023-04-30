@@ -61,9 +61,10 @@ using System;
                     Console.WriteLine("Enter the ID of trainer.");  
                     string temp = Console.ReadLine();
                     Console.WriteLine("Continuing edit...");
-                    bool check4 = tutility.Exist(temp,tutility.GetTrainers());
+                    trainers = tutility.GetTrainers();
+                    bool check4 = tutility.Exist(temp,trainers);
                     if (check4 = true){
-                    tutility.EditTrainer(tutility.SearchTrainerID(temp, tutility.GetTrainers()));
+                    tutility.EditTrainer(tutility.SearchTrainerID(temp, trainers));
                     }
                     else if (check4 = false) {
                         Console.WriteLine("The ID provided doesn't exist. Try Again.");
@@ -80,9 +81,10 @@ using System;
                         Console.WriteLine("Enter the ID.");
                         string temp2 = Console.ReadLine();
                         Console.WriteLine("Continuing removal...");
-                        bool check5 = tutility.Exist(temp2,tutility.GetTrainers());
+                        trainers = tutility.GetTrainers();
+                        bool check5 = tutility.Exist(temp2,trainers);
                         if (check5 = true){
-                            tutility.DeleteTrainer(tutility.SearchTrainerID(temp2,tutility.GetTrainers()));
+                            tutility.DeleteTrainer(tutility.SearchTrainerID(temp2,trainers));
                         }
                         else if (check5 = false) {
                             Console.WriteLine("The ID provided doesn't exist. Try Again.");
@@ -97,9 +99,10 @@ using System;
                             Console.WriteLine("Enter the name.");
                             string tempname = Console.ReadLine();
                             Console.WriteLine("Continuing removal...");
-                            bool check7 = tutility.ExistN(tempname,tutility.GetTrainers());
+                            trainers = tutility.GetTrainers();
+                            bool check7 = tutility.ExistN(tempname,trainers);
                             if (check7 = true){
-                            tutility.DeleteTrainer(tutility.SearchTrainerName(tempname, tutility.GetTrainers()));
+                            tutility.DeleteTrainer(tutility.SearchTrainerName(tempname, trainers));
                             }
                             else if (check7 = false) {
                                 Console.WriteLine("The name provided doesn't exist. Try Again.");
@@ -164,9 +167,10 @@ using System;
                     Console.WriteLine("Enter the ID of listing.");  
                     string temp = Console.ReadLine();
                     Console.WriteLine("Continuing edit...");
-                    bool check9 = lutility.Exist(temp, lutility.GetListings());
+                    listings = lutility.GetListings();
+                    bool check9 = lutility.Exist(temp, listings);
                     if (check9 = true){
-                    lutility.EditListing(lutility.SearchListingID(temp, lutility.GetListings()));
+                    lutility.EditListing(lutility.SearchListingID(temp, listings));
                     }
                     else if (check9 = false) {
                         Console.WriteLine("The ID provided doesn't exist. Try Again.");
@@ -183,9 +187,10 @@ using System;
                         Console.WriteLine("Enter the ID.");
                         string temp3 = Console.ReadLine();
                         Console.WriteLine("Continuing removal...");
-                        bool check11 = lutility.Exist(temp3,lutility.GetListings());
+                        listings = lutility.GetListings();
+                        bool check11 = lutility.Exist(temp3,listings);
                         if (check11 = true){
-                            lutility.DeleteListing(lutility.SearchListingID(temp3,lutility.GetListings()));
+                            lutility.DeleteListing(lutility.SearchListingID(temp3,listings));
                         }
                         else if (check11 = false) {
                             Console.WriteLine("The ID provided doesn't exist. Try Again.");
@@ -200,9 +205,10 @@ using System;
                             Console.WriteLine("Enter the name.");
                             string tempname2 = Console.ReadLine();
                             Console.WriteLine("Continuing removal...");
-                            bool check14 = lutility.ExistN(tempname2,lutility.GetListings());
+                            listings = lutility.GetListings();
+                            bool check14 = lutility.ExistN(tempname2,listings);
                             if (check14 = true){
-                            lutility.DeleteListing(lutility.SearchListingName(tempname2,lutility.GetListings()));
+                            lutility.DeleteListing(lutility.SearchListingName(tempname2,listings));
                             }
                             else if (check14 = false) {
                                 Console.WriteLine("The name provided doesn't exist. Try Again.");
@@ -231,20 +237,24 @@ using System;
 
             int bDecision = int.Parse(Console.ReadLine()); 
             if (bDecision == 1){
-                 lutility.ViewListing(lutility.GetListings());
+                    listings = lutility.GetListings();
+                 lutility.ViewListing(listings);
             }
             else if (bDecision == 2){
-                butility.BookSession(butility.GetBookings());
+                bookings = butility.GetBookings();
+                butility.BookSession(bookings);
             }
             else if (bDecision == 3){
                 Console.WriteLine("If you've completed, simply enter your name:");
                 string compName = Console.ReadLine();
-                butility.CancelONoShow(compName,butility.GetBookings());
+                bookings = butility.GetBookings();
+                butility.CancelONoShow(compName,bookings);
             }
             else if (bDecision == 4){
                 Console.WriteLine("To report a no show, or cancel your session, enter the person's name:");
                 string noShowName = Console.ReadLine();
-                butility.CancelONoShow(noShowName,butility.GetBookings());
+                bookings = butility.GetBookings();
+                butility.CancelONoShow(noShowName,bookings);
             }
             else {Invalid();}
         }
@@ -259,19 +269,21 @@ using System;
             if (rDecision == 1) {
                 Console.WriteLine("Enter email address to view previous sessions.");
                 string addressEntered = Console.ReadLine();
-                //rutility.GetReportTrans();
-                rutility.FindSessions(addressEntered,rutility.GetReportTrans());
+                reports = rutility.GetReportTrans();
+                rutility.FindSessions(addressEntered,reports);
             }
 
             else if (rDecision == 2) {
                 Console.WriteLine("Loading all customer information...");
-                lutility.GetSessionInfo(lutility.GetListings());
+                listings = lutility.GetListings();
+                lutility.GetSessionInfo(listings);
 
             }
 
             else if (rDecision == 3) {
                 Console.WriteLine("Loading revenue information...");
-                lutility.GetRevenue(lutility.GetListings());
+                listings = lutility.GetListings();
+                lutility.GetRevenue(listings);
             }
 
             else {Invalid();}
