@@ -187,7 +187,7 @@ using System;
                         Console.WriteLine("Enter the ID.");
                         string temp3 = Console.ReadLine();
                         Console.WriteLine("Continuing removal...");
-                        //listings = lutility.GetListings();
+                        listings = lutility.GetListings();
                         bool check11 = lutility.Exist(temp3,listings);
                         if (check11 = true){
                             lutility.DeleteListing(lutility.SearchListingID(temp3,listings));

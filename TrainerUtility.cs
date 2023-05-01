@@ -63,8 +63,6 @@ namespace PA5 {
         }
         // Edit a trainer
         public void EditTrainer(int search){
-            //StreamReader readFile = new StreamReader("trainers.txt");
-            //StreamWriter editFile = new StreamWriter("trainers.txt");
             StreamWriter inFile = new StreamWriter("trainers2.txt");
             //int lineVal = search - 1;
 

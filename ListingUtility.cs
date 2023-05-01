@@ -9,7 +9,8 @@ namespace PA5 {
             this.listings = listings;
         } 
         // Gets information from listings.txt 
-        public Listing[] GetListings(){
+        public Listing[] GetListings()
+        {
             Listing[] listings = new Listing[100];
             string[] arrLine = File.ReadAllLines("listings.txt");
             int size = arrLine.Length; 
