@@ -21,6 +21,7 @@ namespace PA5 {
                 //int tempID = int.Parse(tempData[0]);
                 trainers[count] = new Trainer(tempData[0], tempData[1], tempData[2], tempData[3]);
                 count++;
+                //Trainer.InCount();
                 dataRow = inFile.ReadLine();
                 //count++;
             }
