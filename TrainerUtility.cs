@@ -11,12 +11,13 @@ namespace PA5 {
         // Gets information from trainers.txt
         public Trainer[] GetTrainers(){
             Trainer[] trainers = new Trainer[100];
-            //string[] arrLine = File.ReadAllLines("trainers.txt");
-            //int size = arrLine.Length; 
+            string[] arrLine = File.ReadAllLines("trainers.txt");
+            int size = arrLine.Length; 
             StreamReader inFile = new StreamReader("trainers.txt");
             int count = 0;
             string dataRow = inFile.ReadLine();
-            while(dataRow != null){
+            //while(dataRow != null){
+                for (int i = 0; i < size; i++){
                 string[] tempData = dataRow.Split("#");
                 //int tempID = int.Parse(tempData[0]);
                 trainers[count] = new Trainer(tempData[0], tempData[1], tempData[2], tempData[3]);
@@ -24,7 +25,7 @@ namespace PA5 {
                 //Trainer.InCount();
                 dataRow = inFile.ReadLine();
                 //count++;
-            }
+                }
             Trainer.SetCount(count);
             inFile.Close();
             return trainers;

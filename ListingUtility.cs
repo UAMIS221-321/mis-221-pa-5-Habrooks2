@@ -11,18 +11,20 @@ namespace PA5 {
         // Gets information from listings.txt 
         public Listing[] GetListings(){
             Listing[] listings = new Listing[100];
+             string[] arrLine = File.ReadAllLines("listings.txt");
+            int size = arrLine.Length; 
             StreamReader inFile = new StreamReader("listings.txt");
             int count = 0;
             string dataRow = inFile.ReadLine();
-            while(dataRow != null){
+            for (int i = 0; i < size; i++){
                 string[] tempData = dataRow.Split("#");
                 listings[count] = new Listing(tempData[0], tempData[1], tempData[2], tempData[3], tempData[4], tempData[5]);
-                dataRow = inFile.ReadLine();
+                //dataRow = inFile.ReadLine();
                 count++;
+                dataRow = inFile.ReadLine();
                 }
                 Listing.SetCount(count);
                 inFile.Close();
-
                 return listings;
         }
         // Shows revenue by year and month

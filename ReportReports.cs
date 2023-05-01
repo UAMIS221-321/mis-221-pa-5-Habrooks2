@@ -12,15 +12,19 @@ namespace PA5 {
         public Reporting[] GetReportTrans() {
                 Reporting[] reports = new Reporting[100];
                 StreamReader inFile = new StreamReader("transactions.txt");
+                 string[] arrLine = File.ReadAllLines("transactions.txt");
+                int size = arrLine.Length; 
                 int countT = 0;
                 string dataRow = inFile.ReadLine();
-                while(dataRow != null){
+                 for (int i = 0; i < size; i++){
                 string[] tempData = dataRow.Split("#");
                 //int tempID = int.Parse(tempData[0]);
                 reports[countT] = new Reporting(tempData[0], tempData[1], tempData[2], tempData[3], tempData[4], tempData[5], tempData[6]);
 
-                dataRow = inFile.ReadLine();
+                //dataRow = inFile.ReadLine();
+                //dataRow = inFile.ReadLine();
                 countT++;
+                dataRow = inFile.ReadLine();
                 }
             Reporting.SetCount(countT);
             inFile.Close();

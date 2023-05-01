@@ -80,15 +80,18 @@ namespace PA5 {
         public Booking[] GetBookings(){
             Booking[] bookings = new Booking[50];
             StreamReader inFile = new StreamReader("transactions.txt");
+             string[] arrLine = File.ReadAllLines("transactions.txt");
+            int size = arrLine.Length; 
             int count = 0;
             string dataRow = inFile.ReadLine();
-            while(dataRow != null){
+             for (int i = 0; i < size; i++){
                 string[] tempData = dataRow.Split("#");
                 //int tempID = int.Parse(tempData[0]);
                 bookings[count] = new Booking(tempData[0], tempData[1], tempData[2], tempData[3], tempData[4], tempData[5], tempData[6]);
 
-                dataRow = inFile.ReadLine();
+                //dataRow = inFile.ReadLine();
                 count++;
+                dataRow = inFile.ReadLine();
             }
             Booking.SetCount(count);
             inFile.Close();
