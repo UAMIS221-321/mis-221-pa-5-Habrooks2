@@ -165,12 +165,12 @@ using System;
                 case 2:
                     Console.WriteLine("Preparing edit of listing...");
                     Console.WriteLine("Enter the ID of listing.");  
-                    string temp = Console.ReadLine();
+                    string temp2 = Console.ReadLine();
                     Console.WriteLine("Continuing edit...");
-                    listings = lutility.GetListings();
-                    bool check9 = lutility.Exist(temp, listings);
+                    //listings = lutility.GetListings();
+                    bool check9 = lutility.Exist(temp2, listings);
                     if (check9 = true){
-                    lutility.EditListing(lutility.SearchListingID(temp, listings));
+                    lutility.EditListing(lutility.SearchListingID(temp2, listings));
                     }
                     else if (check9 = false) {
                         Console.WriteLine("The ID provided doesn't exist. Try Again.");
@@ -187,7 +187,7 @@ using System;
                         Console.WriteLine("Enter the ID.");
                         string temp3 = Console.ReadLine();
                         Console.WriteLine("Continuing removal...");
-                        listings = lutility.GetListings();
+                        //listings = lutility.GetListings();
                         bool check11 = lutility.Exist(temp3,listings);
                         if (check11 = true){
                             lutility.DeleteListing(lutility.SearchListingID(temp3,listings));
